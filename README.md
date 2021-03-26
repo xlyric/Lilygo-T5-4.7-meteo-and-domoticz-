@@ -1,5 +1,6 @@
-Weather display and Domoticz Values for Lilygo T5 4.7 inch e-paper v3 ( https://fr.aliexpress.com/premium/lilygo-t5.html ) 
+Weather display and Domoticz Values for Lilygo T5 4.7 inch e-paper v3 
 =======================================
+( https://fr.aliexpress.com/premium/lilygo-t5.html ) 
 
 This is ** fork from project https://github.com/G6EJD/ESP32-e-Paper-Weather-Display by David Bird 2018** to work with ED097OC4 Kindle display and this driver.
 **Please note that David Bird (https://github.com/G6EJD) owns the copyright to this software!** Only minor modifications where made for it to run with the epdiy driver.
