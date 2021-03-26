@@ -15,7 +15,7 @@ Building It
  - printing values with array :  {{"name","IDX","codeJson"},{"Prod","28","CounterToday"}, {} }  // {} --> free zone
 		get the codeJson with http://domoticzserver/json.htm?type=devices&rid=yourIDX
 
-![weather image](weather.jpg)
+![weather image](weather1.jpg)
 
 - The driver and sample program are from [vroland/epdiy](https://github.com/vroland/epdiy) and [Xinyuan-LilyGO/LilyGo-EPD47](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/)
 
