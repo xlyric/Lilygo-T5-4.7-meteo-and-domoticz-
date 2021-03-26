@@ -2,26 +2,13 @@
 /// domoticz
 char* host = "192.168.1.20";
 int httpPort = 8080;
-//// Domoticz IDX 
-String linky_IDX = "28";
-String solar_IDX = "29";
-String ballon_IDX = "61";
-String linky;
-String solar;
-String linky_today;
-String solar_today;
-String ballon;
 
-String batterie_IDX = "83";
-String batterie;
+const int wash = 45; // washing machine icon at 45°
+const int disher = 550 ; disher icon at 550W 
 
-const int wash = 45;
-const int disher = 550 ; 
+/// list of values to print : {{"name","IDX","codeJson"},{"Prod","28","CounterToday"}, {} }  // {} --> free zone
 
-// un décallage visuel du texte rendu peut apparaitre, il est du à la police présente sur le projet 
-/// liste des valeurs à afficher : {{"nom","IDX","codeJson"},{"Prod","28","CounterToday"}, {} }  // {} --> zone vide
-
-// nombre de valeurs max affichable
+// max values
 const int max_val=12;
 const String domoticz_IDX[max_val][3] = {{"Ballon","61","Data"},{"Batterie","83","Data"},{},{"Linky","28","Usage"},{"Today","28","CounterToday"},{},{"Solaire","29","Usage"},{"Today","29","CounterToday"},{},{"Gazpar","55","CounterToday"}} ; 
 String domoticz_result[max_val]; 
