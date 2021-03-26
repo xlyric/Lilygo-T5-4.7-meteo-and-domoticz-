@@ -1,17 +1,17 @@
 const bool DebugDisplayUpdate = false;
 
 // Change to your WiFi credentials
-const char* ssid     = "FreeLyric";
-const char* password = "Eurosport2007obeoes";
+const char* ssid     = "SSID";
+const char* password = "Password";
 
 // Use your own API key by signing up for a free developer account at https://openweathermap.org/
-String apikey       = "e752bfc6b4d4b1ba937ac9d192327126";                      // See: https://openweathermap.org/
+String apikey       = "APKIKEY";                      // See: https://openweathermap.org/
 const char server[] = "api.openweathermap.org";
 //http://api.openweathermap.org/data/2.5/forecast?q=Melksham,UK&APPID=your_OWM_API_key&mode=json&units=metric&cnt=40
 //http://api.openweathermap.org/data/2.5/weather?q=Melksham,UK&APPID=your_OWM_API_key&mode=json&units=metric&cnt=1
 
 //Set your location according to OWM locations
-String City             = "Morangis";                          // Your home city See: http://bulk.openweathermap.org/sample/
+String City             = "Paris";                          // Your home city See: http://bulk.openweathermap.org/sample/
 String Latitude         = "48.7";                         // Latitude of your location in decimal degrees
 String Longitude        = "2.33";                         // Longitude of your location in decimal degrees
 String Language         = "fr";                            // NOTE: Only the weather description is translated by OWM
