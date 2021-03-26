@@ -41,7 +41,7 @@ Building It
 
 
 
-initial License
+Initial License
 -------
 
 This software, the ideas and concepts is Copyright (c) David Bird 2014 and beyond.
