@@ -1,10 +1,10 @@
 
 /// domoticz
-char* host = "192.168.1.20";
-int httpPort = 8080;
+char* host = "192.168.1.20";  // your own Domoticz server IP
+int httpPort = 8080; 
 
 const int wash = 45; // washing machine icon at 45°
-const int disher = 550 ; disher icon at 550W 
+const int disher = 550 ; //disher icon at 550W 
 
 /// list of values to print : {{"name","IDX","codeJson"},{"Prod","28","CounterToday"}, {} }  // {} --> free zone
 
