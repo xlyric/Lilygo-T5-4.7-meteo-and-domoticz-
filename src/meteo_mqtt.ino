@@ -175,14 +175,15 @@ void setup() {
         Attempts++;
       }
       Serial.println("Received all weather data...");
-      if (RxWeather && RxForecast) { // Only if received both Weather or Forecast proceed
+      // if --> made somes issues 
+      //if (RxWeather && RxForecast)      { // Only if received both Weather or Forecast proceed
         StopWiFi();         // Reduces power consumption
         epd_poweron();      // Switch on EPD display
         epd_clear();        // Clear the screen
         DisplayWeather();   // Display the weather data
         edp_update();       // Update the display to show the information
         epd_poweroff_all(); // Switch off all power to EPD
-      }
+       //}
     }
   }
   BeginSleep();
@@ -421,7 +422,7 @@ String WindDegToOrdinalDirection(float winddirection) {
   if (winddirection >= 281.25 && winddirection < 303.75) return TXT_WNW;
   if (winddirection >= 303.75 && winddirection < 326.25) return TXT_NW;
   if (winddirection >= 326.25 && winddirection < 348.75) return TXT_NNW;
-  return "?";
+  return "No Data";
 }
 
 void DisplayTempHumiPressSection(int x, int y) {
@@ -920,7 +921,7 @@ void addmoon(int x, int y, bool IconSize) {
 
 void Nodata(int x, int y, bool IconSize, String IconName) {
   if (IconSize == LargeIcon) setFont(OpenSans24B); else setFont(OpenSans12B);
-  drawString(x - 3, y - 10, "?", CENTER);
+  drawString(x - 3, y - 10, "No Data", CENTER);
 }
 
 void DrawMoonImage(int x, int y) {
